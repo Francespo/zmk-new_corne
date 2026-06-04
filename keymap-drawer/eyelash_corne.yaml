@@ -29,7 +29,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RGUI}
   - {t: '&usi_grave', s: '&usi_tilde'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&td0'
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '!', s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&td0'
   - NPD NAV
   - SYM NUM
   - $$mdi:keyboard-space$$
