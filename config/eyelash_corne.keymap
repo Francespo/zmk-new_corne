@@ -206,7 +206,7 @@
         };
 
         GAMING-NUMBERS {
-            display-name = "GMG UM";
+            display-name = "GMG NUM";
             bindings = <
 &trans  &kp N1  &trans  &kp N2  &kp N3  &kp N4                      &none         &none  &none  &none  &none  &none  &none
 &trans  &trans  &trans  &trans  &kp N5  &kp N6               &none  &none  &none  &none  &none  &none  &none  &none  &none
