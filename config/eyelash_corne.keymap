@@ -1,13 +1,13 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
-#define COLEMAK-DH        0
+#define DEFAULT        0
 #define VOWEL_ACCENTS     1
 #define SYMBOLS_NUMBERS   2
 #define NUMPAD_NAVIGATION 3
 #define FUNCTION_SYSTEM   4
 #define GAMING     5
-#define GAMING-NUMBERS    6
+#define GAMING_NUMBERS    6
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -206,9 +206,9 @@
             display-name = "GAMING";
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                          &none         &none  &none  &none  &none  &none  &none
-&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                   &none  &to COLEMAK-DH  &none  &none  &none  &none  &none  &none  &none
+&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                   &none  &to DEFAULT  &none  &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V      &kp B      &kp SLASH           &none         &none  &none  &none  &none  &none  &none
-                         &mo GAMING-NUMBERS  &kp LCTRL  &kp SPACE                                    &none  &none  &none
+                         &mo GAMING_NUMBERS  &kp LCTRL  &kp SPACE                                    &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp DOT COMMA>;
