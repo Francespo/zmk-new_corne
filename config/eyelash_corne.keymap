@@ -133,8 +133,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        DEFAULT {
-            display-name = "CLMKDH";
+        CLMKDH {
             bindings = <
 &kp ESC    &kp Q       &kp W       &kp F        &kp P        &kp B                                    &kp UP               &kp J    &kp L        &kp U        &kp Y       &kp SEMI     &kp BACKSPACE
 &kp TAB    &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O   &kp SQT
@@ -146,7 +145,6 @@
         };
 
         ACCENTS {
-            display-name = "ACCENTS";
             bindings = <
 &trans  &trans      &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &mac_u_grv  &trans      &trans      &trans
 &trans  &mac_a_grv  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &mac_e_grv  &mac_i_grv  &mac_o_grv  &trans
@@ -158,7 +156,6 @@
         };
 
         NUMPAD_NAV {
-            display-name = "NUMPAD_NAV";
             bindings = <
 &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                &mmv MOVE_UP                     &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
 &trans  &none            &none            &none            &none            &none                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp INSERT       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &none
@@ -170,7 +167,6 @@
         };
 
         SYM_NUM {
-            display-name = "SYM_NUM";
             bindings = <
 &trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6         &kp N7         &kp N8            &kp N9     &kp N0      &trans
 &trans  &kp SLASH     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp SEMICOLON  &undscr_mns    &kp EQUAL         &kp LBKT   &kp RBKT    &kp APOS
@@ -193,7 +189,6 @@
         };
 
         GAMING {
-            display-name = "GAMING";
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E      &kp R  &kp T                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
