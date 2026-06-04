@@ -134,7 +134,7 @@
         compatible = "zmk,keymap";
 
         COLEMAK-DH {
-            display-name = "CLMK-DH";
+            display-name = "CLMK DH";
             bindings = <
 &kp ESC    &kp Q       &kp W       &kp F        &kp P        &kp B                                    &kp UP               &kp J    &kp L        &kp U        &kp Y       &kp SEMI     &kp BACKSPACE
 &kp TAB    &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O   &kp SQT
@@ -146,7 +146,7 @@
         };
 
         VOWEL_ACCENTS {
-            display-name = "ACCENTS";
+            display-name = "ACNT";
             bindings = <
 &trans  &trans      &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &mac_u_grv  &trans      &trans      &trans
 &trans  &mac_a_grv  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &mac_e_grv  &mac_i_grv  &mac_o_grv  &trans
@@ -158,7 +158,7 @@
         };
 
         NUMPAD_NAVIGATION {
-            display-name = "NPD_NAV";
+            display-name = "NPD NAV";
             bindings = <
 &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                            &mmv MOVE_UP                     &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
 &trans  &kp LGUI         &kp LALT         &kp LCTRL        &kp LSHFT        &none                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp INSERT       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp PRINTSCREEN
@@ -170,7 +170,7 @@
         };
 
         SYMBOLS_NUMBERS {
-            display-name = "SYM_NUM";
+            display-name = "SYM NUM";
             bindings = <
 &trans  &kp NUMBER_1  &kp N2    &kp N3     &kp N4     &kp N5                    &trans          &kp N6         &kp N7         &kp N8     &kp N9    &kp N0     &trans
 &trans  &kp LGUI      &kp LALT  &kp LCTRL  &kp LSHFT  &none             &trans  &trans  &trans  &kp SEMICOLON  &undscr_mns    &kp EQUAL  &kp LBKT  &kp RBKT   &kp APOS
@@ -182,7 +182,7 @@
         };
 
         FUNCTION_SYSTEM {
-            display-name = "FNC_SYS";
+            display-name = "FNC SYS";
             bindings = <
 &trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                            &studio_unlock                   &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &trans
 &trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10             &out OUT_USB  &sys_reset         &out OUT_BLE  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_COLOR_HSB(0,0,100)
@@ -194,7 +194,7 @@
         };
 
         GAMING-QWERTY {
-            display-name = "GMG-QRT";
+            display-name = "GMG QRT";
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                          &none         &none  &none  &none  &none  &none  &none
 &kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                   &none  &to 0  &none  &none  &none  &none  &none  &none  &none
@@ -206,7 +206,7 @@
         };
 
         GAMING-NUMBERS {
-            display-name = "GMG-NUM";
+            display-name = "GMG UM";
             bindings = <
 &trans  &kp N1  &trans  &kp N2  &kp N3  &kp N4                      &none         &none  &none  &none  &none  &none  &none
 &trans  &trans  &trans  &trans  &kp N5  &kp N6               &none  &none  &none  &none  &none  &none  &none  &none  &none
