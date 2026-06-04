@@ -44,11 +44,11 @@ layers:
   - {t: '!', s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - NUMPAD_NAV
-  - GAMING
+  - SYM_NUM
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - ACCENTS
-  - NUM_SYM
+  - FNC_SYS
   ACCENTS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  NUM_SYM:
+  SYM_NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - {t: '2', s: '@'}
@@ -191,12 +191,12 @@ layers:
   - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  FUNC_SYS:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  FNC_SYS:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   GAMING:
   - $$mdi:keyboard-esc$$
   - Q
@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - {t: NUMPAD_NAV, type: held}
+  - NUMPAD_NAV
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: CLMKDH, h: toggle}
