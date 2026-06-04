@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: '!', s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - NUM_NAV
+  - NUMPAD_NAV
   - GAMING
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -98,19 +98,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  NUM_NAV:
+  NUMPAD_NAV:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 4
+  - KP 5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - KP 6
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -149,8 +149,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYMBOLS:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
+  - '1'
+  - {t: '2', s: '@'}
   - '#'
   - $
   - '%'
@@ -162,7 +162,7 @@ layers:
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '?'
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - {t: NUM_NAV, type: held}
+  - {t: NUMPAD_NAV, type: held}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: CLMKDH, h: toggle}
