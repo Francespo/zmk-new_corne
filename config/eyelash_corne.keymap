@@ -122,11 +122,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td0: td0 {
+        td_shift_caps: td_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+
+            label = "LSHIFT/CAPS Tap Dance";
         };
 
         rgb_encoder: rgb_encoder {
@@ -206,10 +208,10 @@
         COLEMAK_DH {
             display-name = "CLMK DH";
             bindings = <
-&kp ESC    &kp Q       &kp W       &kp F                  &kp P                &kp B                                    &kp UP               &kp J    &kp L              &kp U                &kp Y       &kp SEMI     &kp BACKSPACE
-&kp TAB    &hm LGUI A  &hm LALT R  &hm LCTRL S            &hm LSHFT T          &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N        &hm RCTRL E          &hm RALT I  &hm RGUI O   &usi_grave_tilde
-&td0       &kp Z       &kp X       &kp C                  &kp D                &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K    &kp H              &kp COMMA            &kp DOT     &excl_qmark  &td0
-                                   &mo NUMPAD_NAVIGATION  &mo SYMBOLS_NUMBERS  &kp SPACE                                                     &kp RET  &mo VOWEL_ACCENTS  &mo FUNCTION_SYSTEM
+&kp ESC         &kp Q       &kp W       &kp F                  &kp P                &kp B                                    &kp UP               &kp J    &kp L              &kp U                &kp Y       &kp SEMI     &kp BACKSPACE
+&kp TAB         &hm LGUI A  &hm LALT R  &hm LCTRL S            &hm LSHFT T          &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N        &hm RCTRL E          &hm RALT I  &hm RGUI O   &usi_grave_tilde
+&td_shift_caps  &kp Z       &kp X       &kp C                  &kp D                &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K    &kp H              &kp COMMA            &kp DOT     &excl_qmark  &td_shift_caps
+                                        &mo NUMPAD_NAVIGATION  &mo SYMBOLS_NUMBERS  &kp SPACE                                                     &kp RET  &mo VOWEL_ACCENTS  &mo FUNCTION_SYSTEM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
