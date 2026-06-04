@@ -169,13 +169,13 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        SYMBOLS {
-            display-name = "SYMBOLS";
+        NUM_SYM {
+            display-name = "NUM_SYM";
             bindings = <
-&trans  &kp NUMBER_1  &kp N2  &kp HASH  &kp DLLR  &kp PRCNT                    &trans          &kp CARET      &kp AMPS       &kp ASTRK         &kp LPAR   &kp RPAR    &trans
-&trans  &kp SLASH     &trans  &trans    &trans    &trans               &trans  &trans  &trans  &kp SEMICOLON  &undscr_mns    &kp EQUAL         &kp LBKT   &kp RBKT    &kp APOS
-&trans  &trans        &trans  &trans    &trans    &trans     &trans            &trans          &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA  &kp PERIOD  &trans
-                              &trans    &trans    &trans                                       &trans         &trans         &trans
+&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6         &kp N7         &kp N8            &kp N9     &kp N0      &trans
+&trans  &kp SLASH     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp SEMICOLON  &undscr_mns    &kp EQUAL         &kp LBKT   &kp RBKT    &kp APOS
+&trans  &trans        &trans  &trans  &trans  &trans  &trans            &trans          &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA  &kp PERIOD  &trans
+                              &trans  &trans  &trans                                    &trans         &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
