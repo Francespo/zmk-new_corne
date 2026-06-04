@@ -114,8 +114,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "COLEMAK";
+        DEFAULT {
+            display-name = "CLMKDH";
             bindings = <
 &kp ESC    &kp Q       &kp W       &kp F        &kp P        &kp B                                    &kp UP               &kp J    &kp L        &kp U        &kp Y       &kp SEMI     &kp BSPC
 &kp TAB    &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O   &kp SQT
