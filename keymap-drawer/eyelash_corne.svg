@@ -274,8 +274,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-COLEMAK">
-<text x="0" y="28" class="label" id="COLEMAK">COLEMAK:</text>
+<g transform="translate(40, 0)" class="layer-CLMKDH">
+<text x="0" y="28" class="label" id="CLMKDH">CLMKDH:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1784,15 +1784,15 @@ rect.held, rect.combo.held {
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#COLEMAK">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">COLEMAK</tspan></text>
+<a href="#CLMKDH">
+<text x="0" y="-4" class="key tap layer-activator">CLMKDH</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#COLEMAK">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">COLEMAK</tspan></text>
+<a href="#CLMKDH">
+<text x="0" y="-4" class="key tap layer-activator">CLMKDH</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 </g>

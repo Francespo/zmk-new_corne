@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  COLEMAK:
+  CLMKDH:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -292,5 +292,5 @@ layers:
   - NUM_NAV
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: COLEMAK, h: toggle}
-  - {t: COLEMAK, h: toggle}
+  - {t: CLMKDH, h: toggle}
+  - {t: CLMKDH, h: toggle}
