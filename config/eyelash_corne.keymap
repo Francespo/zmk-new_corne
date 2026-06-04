@@ -137,10 +137,10 @@
 
         FUNC_SYS {
             bindings = <
-&kp ESC  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                     &none         &none       &none         &none         &none           &none         &trans
-&kp F12  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10             &none  &none  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &none
-&trans   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &none           &none         &to 5       &out OUT_USB  &out OUT_BLE  &studio_unlock  &none         &trans
-                               &none      &none      &trans                                   &trans      &none         &none
+&trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                     &none         &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &trans
+&trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10             &none  &none  &none  &none       &none         &none         &none         &none           &none
+&trans   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &to 5           &none         &none       &none         &out OUT_USB  &out OUT_BLE  &studio_unlock  &trans
+                               &kp F11    &kp F12    &trans                                   &trans      &none         &none
             >;
 
             sensor-bindings = <&rgb_encoder>;
