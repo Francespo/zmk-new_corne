@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  CLMK-DH:
+  CLMK DH:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -43,13 +43,13 @@ layers:
   - {t: ., s: '>'}
   - {t: '!', s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - NPD_NAV
-  - SYM_NUM
+  - NPD NAV
+  - SYM NUM
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - ACCENTS
-  - FNC_SYS
-  ACCENTS:
+  - ACNT
+  - FNC SYS
+  ACNT:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  NPD_NAV:
+  NPD NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYM_NUM:
+  SYM NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - {t: '2', s: '@'}
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  FNC_SYS:
+  FNC SYS:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -231,7 +231,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+Y
-  - {t: GMG-QRT, h: toggle}
+  - {t: GMG QRT, h: toggle}
   - EP TOG
   - RGB BRD
   - RGB BRI
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  GMG-QRT:
+  GMG QRT:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -266,7 +266,7 @@ layers:
   - F
   - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: CLMK-DH, h: toggle}
+  - {t: CLMK DH, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -288,13 +288,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - GMG-NUM
+  - GMG UM
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  GMG-NUM:
+  GMG UM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '$$mdi:transfer$$', type: trans}
