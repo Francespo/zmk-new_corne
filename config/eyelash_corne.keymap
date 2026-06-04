@@ -157,10 +157,10 @@
 
         NUMPAD_NAV {
             bindings = <
-&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                &mmv MOVE_UP                     &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
-&trans  &none            &none            &none            &none            &none                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp INSERT       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &none
-&trans  &none            &none            &none            &none            &none            &kp C_MUTE                    &mmv MOVE_DOWN                   &kp DELETE       &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP      &kp END          &trans
-                                          &trans           &trans           &trans                                                                          &trans           &trans           &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                            &mmv MOVE_UP                     &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
+&trans  &kp LGUI         &kp LALT         &kp LCTRL        &kp LSHFT        &none                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp INSERT       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &none
+&trans  &none            &none            &none            &none            &none            &trans                    &mmv MOVE_DOWN                   &kp DELETE       &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP      &kp END          &trans
+                                          &trans           &trans           &trans                                                                      &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -168,10 +168,10 @@
 
         SYM_NUM {
             bindings = <
-&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6         &kp N7        &kp N8     &kp N9    &kp N0    &trans
-&trans  &kp SLASH     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp SEMICOLON  &undscr_mns   &kp EQUAL  &kp LBKT  &kp RBKT  &kp APOS
-&trans  &trans        &trans  &trans  &trans  &trans  &trans            &trans          &kp BACKSLASH  &kp KP_SLASH  &kp COMMA  &kp DOT   &kp PIPE  &trans
-                              &trans  &trans  &trans                                    &trans         &trans        &trans
+&trans  &kp NUMBER_1  &kp N2    &kp N3     &kp N4     &kp N5                    &trans          &kp N6         &kp N7         &kp N8     &kp N9    &kp N0     &trans
+&trans  &kp LGUI      &kp LALT  &kp LCTRL  &kp LSHFT  &none             &trans  &trans  &trans  &kp SEMICOLON  &undscr_mns    &kp EQUAL  &kp LBKT  &kp RBKT   &kp APOS
+&trans  &none         &none     &none      &none      &none   &trans            &trans          &none          &kp BACKSLASH  &kp COMMA  &kp DOT   &kp SLASH  &trans
+                                &trans     &trans     &trans                                    &trans         &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -192,9 +192,9 @@
         GAMING {
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                          &none         &none  &none  &none  &none  &none  &none
-&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                   &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                   &none  &to 0  &none  &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V      &kp B      &kp SLASH           &none         &none  &none  &none  &none  &none  &none
-                         &mo 6  &kp LCTRL  &kp SPACE                                    &none  &to 0  &to 0
+                         &mo 6  &kp LCTRL  &kp SPACE                                    &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp DOT COMMA>;
