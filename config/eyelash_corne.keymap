@@ -1,11 +1,11 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
-#define DEFAULT        0
+#define DEFAULT           0
 #define VOWEL_ACCENTS     1
 #define SYMBOLS_NUMBERS   2
 #define NUMPAD_NAVIGATION 3
 #define FUNCTION_SYSTEM   4
-#define GAMING     5
+#define GAMING            5
 #define GAMING_NUMBERS    6
 
 #include <input/processors.dtsi>
@@ -39,68 +39,68 @@
 
 / {
     macros {
-        usi_a_grv: mac_a_grv {
+        usi_a_grv: usi_a_grv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp A>;
         };
 
-        usi_e_grv: mac_e_grv {
+        usi_e_grv: usi_e_grv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp E>;
         };
 
-        usi_e_acu: mac_e_acu {
+        usi_e_acu: usi_e_acu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp E>;
         };
 
-        usi_i_grv: mac_i_grv {
+        usi_i_grv: usi_i_grv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp I>;
         };
 
-        usi_o_grv: mac_o_grv {
+        usi_o_grv: usi_o_grv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp O>;
         };
 
-        usi_u_grv: mac_u_grv {
+        usi_u_grv: usi_u_grv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp U>;
         };
 
-        usi_quote: apostrophe {
+        usi_quote: usi_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SPACE>;
-            label = "APOSTROPHE";
+            label = "USI_QUOTE";
         };
 
-        usi_dquote: mac_usi_dqte {
+        usi_dquote: usi_dquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp SPACE>;
-            label = "MAC_USI_DQTE";
+            label = "USI_DQTE";
         };
 
-        usi_grave: mac_usi_grave {
+        usi_grave: usi_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp SPACE>;
-            label = "MAC_USI_GRAVE";
+            label = "USI_GRAVE";
         };
 
-        usi_tilde: mac_usi_tilde {
+        usi_tilde: usi_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp SPACE>;
-            label = "MAC_USI_TILDE";
+            label = "USI_TILDE";
         };
 
         usi_caret: usi_caret {
@@ -208,7 +208,7 @@
             bindings = <
 &kp ESC    &kp Q       &kp W       &kp F                  &kp P                &kp B                                    &kp UP               &kp J    &kp L              &kp U                &kp Y       &kp SEMI     &kp BACKSPACE
 &kp TAB    &hm LGUI A  &hm LALT R  &hm LCTRL S            &hm LSHFT T          &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N        &hm RCTRL E          &hm RALT I  &hm RGUI O   &usi_grave_tilde
-&kp LSHFT  &kp Z       &kp X       &kp C                  &kp D                &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K    &kp H              &kp COMMA            &kp DOT     &excl_qmark  &kp LSHFT
+&td0       &kp Z       &kp X       &kp C                  &kp D                &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K    &kp H              &kp COMMA            &kp DOT     &excl_qmark  &td0
                                    &mo NUMPAD_NAVIGATION  &mo SYMBOLS_NUMBERS  &kp SPACE                                                     &kp RET  &mo VOWEL_ACCENTS  &mo FUNCTION_SYSTEM
             >;
 
