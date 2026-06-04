@@ -28,7 +28,7 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RGUI}
-  - {t: '&usi_grave', s: '&usi_tilde'}
+  - {t: '&usi_quote', s: '&usi_dquote'}
   - '&td_shift_caps'
   - Z
   - X
@@ -235,8 +235,8 @@ layers:
   - EP TOG
   - RGB BRD
   - RGB BRI
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB HUD
+  - RGB HUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
