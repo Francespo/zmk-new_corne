@@ -193,7 +193,7 @@
         usi_6_caret: usi_6_caret {
             compatible = "zmk,behavior-mod-morph";
             label = "USI_6_CARET";
-            bindings = <&usi_grave>, <&usi_tilde>;
+            bindings = <&kp N6>, <&usi_caret>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
