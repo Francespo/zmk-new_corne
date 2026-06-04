@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  CLMKDH:
+  CLMK-DH:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: '!', s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - NUMPAD_NAV
+  - NPD_NAV
   - SYM_NUM
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  NUMPAD_NAV:
+  NPD_NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
@@ -231,7 +231,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+Y
-  - {t: GAMING, h: toggle}
+  - {t: GMG-QRT, h: toggle}
   - EP TOG
   - RGB BRD
   - RGB BRI
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  GAMING:
+  GMG-QRT:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -266,7 +266,7 @@ layers:
   - F
   - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: CLMKDH, h: toggle}
+  - {t: CLMK-DH, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -288,13 +288,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - GMG_NUM
+  - GMG-NUM
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  GMG_NUM:
+  GMG-NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '$$mdi:transfer$$', type: trans}
