@@ -206,6 +206,7 @@
         momentary_layer_7 {
             bindings = <&mo 7>;
             key-positions = <43 44>;
+            layers = <0>;
         };
     };
 
