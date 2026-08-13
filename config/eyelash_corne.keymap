@@ -7,6 +7,8 @@
 #define FUNCTION_SYSTEM   4
 #define GAMING            5
 #define GAMING_NUMBERS    6
+#define LEFT_SHORTCUTS_F   7
+#define LEFT_SHORTCUTS_MEH 8
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -131,6 +133,26 @@
             label = "LSHIFT/CAPS Tap Dance";
         };
 
+        // Tap-Dance per i tasti Function (1 tap = F1..F12, 2 tap = F13..F24)
+        td_f1: td_f1 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F1>, <&kp F13>; };
+        td_f2: td_f2 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F2>, <&kp F14>; };
+        td_f3: td_f3 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F3>, <&kp F15>; };
+        td_f4: td_f4 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F4>, <&kp F16>; };
+        td_f5: td_f5 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F5>, <&kp F17>; };
+        td_f6: td_f6 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F6>, <&kp F18>; };
+        td_f7: td_f7 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F7>, <&kp F19>; };
+        td_f8: td_f8 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F8>, <&kp F20>; };
+        td_f9: td_f9 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F9>, <&kp F21>; };
+        td_f10: td_f10 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F10>, <&kp F22>; };
+        td_f11: td_f11 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F11>, <&kp F23>; };
+        td_f12: td_f12 { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp F12>, <&kp F24>; };
+
+        // Tap-Dance per i tasti Ctrl+A, Ctrl+W, Ctrl+F e Ctrl+S sulle posizioni fisiche Colemak-DH
+        td_ctrl_a: td_ctrl_a { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp LC(A)>, <&kp LC(LA(LS(A)))>; };
+        td_ctrl_w: td_ctrl_w { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp LC(W)>, <&kp LC(LA(LS(W)))>; };
+        td_ctrl_f: td_ctrl_f { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp LC(F)>, <&kp LC(LA(LS(F)))>; };
+        td_ctrl_s: td_ctrl_s { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp LC(S)>, <&kp LC(LA(LS(S)))>; };
+
         rgb_encoder: rgb_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -204,9 +226,17 @@
         compatible = "zmk,combos";
 
         momentary_layer_7 {
-            bindings = <&mo 7>;
-            key-positions = <43 44>;
-            layers = <0>;
+            bindings = <&mo LEFT_SHORTCUTS_F>;
+            key-positions = <43 44>; // Tasti centrale e destro del pollice sinistro
+            layers = <0 2>;
+            timeout-ms = <50>;
+        };
+
+        momentary_layer_8 {
+            bindings = <&mo LEFT_SHORTCUTS_MEH>;
+            key-positions = <42 43>; // Tasti sinistro e centrale del pollice sinistro
+            layers = <0 2>;
+            timeout-ms = <50>;
         };
     };
 
@@ -216,10 +246,10 @@
         COLEMAK_DH {
             display-name = "CLMK DH";
             bindings = <
-&kp ESC         &kp Q       &kp W       &kp F                  &kp P                &kp B                                    &kp UP               &kp J    &kp L              &kp U                &kp Y       &kp SEMI     &kp BACKSPACE
-&kp TAB         &hm LGUI A  &hm LALT R  &hm LCTRL S            &hm LSHFT T          &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N        &hm RCTRL E          &hm RALT I  &hm RGUI O   &usi_quote_dquote
-&td_shift_caps  &kp Z       &kp X       &kp C                  &kp D                &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K    &kp H              &kp COMMA            &kp DOT     &excl_qmark  &td_shift_caps
-                                        &mo NUMPAD_NAVIGATION  &mo SYMBOLS_NUMBERS  &kp SPACE                                                     &kp RET  &mo VOWEL_ACCENTS  &mo FUNCTION_SYSTEM
+&kp ESC         &kp Q       &kp W       &kp F                  &kp P                &kp B                                                                   &kp UP               &kp J    &kp L              &kp U                &kp Y       &kp SEMI     &kp BACKSPACE
+&kp TAB         &hm LGUI A  &hm LALT R  &hm LCTRL S            &hm LSHFT T          &kp G                                                           &kp LEFT  &kp RET   &kp RIGHT  &kp M    &hm RSHFT N        &hm RCTRL E          &hm RALT I  &hm RGUI O   &usi_quote_dquote
+&td_shift_caps  &kp Z       &kp X       &kp C                  &kp D                &kp V      &kp C_PLAY_PAUSE                                             &kp DOWN             &kp K    &kp H              &kp COMMA            &kp DOT     &excl_qmark  &td_shift_caps
+                                        &mo NUMPAD_NAVIGATION  &mo SYMBOLS_NUMBERS  &kp SPACE                                                                                    &kp RET  &mo VOWEL_ACCENTS  &mo FUNCTION_SYSTEM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -264,10 +294,10 @@
         FUNCTION_SYSTEM {
             display-name = "FNC SYS";
             bindings = <
-&trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                 &studio_unlock                   &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &trans
-&trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10                  &out OUT_USB  &sys_reset         &out OUT_BLE  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_COLOR_HSB(0,0,100)
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &to GAMING                  &ext_power EP_TOG                &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &none            &trans
-                              &kp F11    &kp F12    &trans                                                                  &trans           &trans           &trans
+&trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                 &studio_unlock                    &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &trans
+&trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10                  &out OUT_USB  &sys_reset        &out OUT_BLE    &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_COLOR_HSB(0,0,100)
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &to GAMING                  &ext_power EP_TOG                   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &none            &trans
+                              &kp F11    &kp F12    &trans                                                                    &trans           &trans           &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
@@ -277,7 +307,7 @@
             display-name = "GAMING";
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E               &kp R      &kp T                          &none               &none  &none  &none  &none  &none  &none
-&kp TAB    &kp A  &kp S  &kp D               &kp F      &kp G                   &none  &to DEFAULT  &none  &none  &none  &none  &none  &none  &none
+&kp TAB    &kp A  &kp S  &kp D               &kp F      &kp G                  &none   &to DEFAULT  &none  &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp Z  &kp X  &kp C               &kp V      &kp B      &kp SLASH           &none               &none  &none  &none  &none  &none  &none
                          &mo GAMING_NUMBERS  &kp LCTRL  &kp SPACE                                          &none  &none  &none
             >;
@@ -298,14 +328,26 @@
         };
 
         LEFT_ONLY_SHORTCUTS {
+            display-name = "LSHTCTS";
             bindings = <
-&kp F13    &kp F14    &kp F15    &kp F16    &kp F17    &kp F18                               &none         &none  &none  &none  &none  &none  &none
-&kp F19    &kp LC(A)  &kp F20    &kp F21    &kp F22    &kp F23                        &none  &none  &none  &none  &none  &none  &none  &none  &none
+&td_f1     &td_f2     &td_f3     &td_f4     &td_f5     &td_f6                                &none         &none  &none  &none  &none  &none  &none
+&td_f7     &td_f8     &td_f9     &td_f10    &td_f11    &td_f12                        &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp LC(Y)  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &kp C_PLAY_PAUSE           &none         &none  &none  &none  &none  &none  &none
-                                 &kp F24    &trans     &trans                                              &none  &none  &none
+                                 &trans     &trans     &trans                                              &none  &none  &none
             >;
 
-            label = "LSHTCTS";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        LEFT_ONLY_SHORTCUTS_MEH {
+            display-name = "LSH MEH";
+            bindings = <
+&trans     &kp LC(LA(LS(Q)))  &td_ctrl_w         &td_ctrl_f         &kp LC(LA(LS(P)))  &kp LC(LA(LS(B)))                               &none         &none  &none  &none  &none  &none  &none
+&trans     &td_ctrl_a         &kp LC(LA(LS(R)))  &td_ctrl_s         &kp LC(LA(LS(T)))  &kp LC(LA(LS(G)))                        &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp LC(Y)  &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(D)          &kp LC(V)          &kp C_PLAY_PAUSE           &none         &none  &none  &none  &none  &none  &none
+                                                 &trans             &trans             &trans                                              &none  &none  &none
+            >;
+
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
