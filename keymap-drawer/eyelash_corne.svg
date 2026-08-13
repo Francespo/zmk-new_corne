@@ -547,8 +547,10 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
-<a href="#LSHTCTS">
-<text x="317" y="217" class="combo tap layer-activator"><tspan style="font-size: 86%">LSHTCTS</tspan></text>
+<a href="#LSH-FNC">
+<text x="317" y="217" class="combo tap layer-activator">
+<tspan x="317" dy="-0.6em">LSH</tspan><tspan x="317" dy="1.2em">FNC</tspan>
+</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="241" y="193" width="28" height="26" class="combo"/>
@@ -1068,8 +1070,10 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
-<a href="#LSHTCTS">
-<text x="317" y="217" class="combo tap layer-activator"><tspan style="font-size: 86%">LSHTCTS</tspan></text>
+<a href="#LSH-FNC">
+<text x="317" y="217" class="combo tap layer-activator">
+<tspan x="317" dy="-0.6em">LSH</tspan><tspan x="317" dy="1.2em">FNC</tspan>
+</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="241" y="193" width="28" height="26" class="combo"/>
@@ -2132,8 +2136,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 2229)" class="layer-LSHTCTS">
-<text x="0" y="28" class="label" id="LSHTCTS">LSHTCTS:</text>
+<g transform="translate(40, 2229)" class="layer-LSH FNC">
+<text x="0" y="28" class="label" id="LSH-FNC">LSH FNC:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

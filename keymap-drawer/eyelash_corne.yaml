@@ -343,7 +343,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  LSHTCTS:
+  LSH FNC:
   - '&td_f1'
   - '&td_f2'
   - '&td_f3'
@@ -443,7 +443,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [43, 44]
-  k: LSHTCTS
+  k: LSH FNC
   l: [CLMK DH, SYM NUM]
 - p: [42, 43]
   k: LSH MEH
