@@ -305,7 +305,7 @@
                                  &kp F24    &trans     &trans                                              &none  &none  &none
             >;
 
-            label = "LSHTC";
+            label = "LSHTCTS";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
