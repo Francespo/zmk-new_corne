@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -337,9 +337,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -543,9 +543,6 @@ combos:
 - p: [42, 47]
   k: FNC SYS
   l: [CLMK DH]
-- p: [42, 43]
-  k: LSH MEH
-  l: [CLMK DH]
 - p: [43, 44]
-  k: LSHTCTS
+  k: LSH MEH
   l: [CLMK DH]
