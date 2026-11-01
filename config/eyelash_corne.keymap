@@ -189,13 +189,6 @@
 
         combo_shortcuts_meh {
             bindings = <&mo SHORTCUTS_MEH>;
-            key-positions = <42 43>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        combo_shortcuts_f {
-            bindings = <&mo SHORTCUTS_F>;
             key-positions = <43 44>;
             layers = <0>;
             timeout-ms = <50>;
