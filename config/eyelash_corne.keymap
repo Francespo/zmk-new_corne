@@ -237,13 +237,13 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        /* Layer 3: Navigazione cursore & Workspace */
+/* Layer 3: Navigazione cursore & Workspace (Frecce Vim su N-E-I-O) */
         NAV {
             display-name = "NAV";
             bindings = <
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)                                   &trans          &kp PG_UP  &kp HOME        &kp UP     &kp END    &kp PSCRN  &kp DEL
-&trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &kp LG(Q)                            &trans  &trans  &trans  &kp PG_DN  &kp LEFT        &kp DOWN   &kp RIGHT  &kp INS    &trans
-&trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans                           &trans          &kp LC(Z)  &kp LC(X)       &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)                                   &trans          &kp PSCRN  &kp HOME        &kp PG_DN  &kp PG_UP  &kp END      &kp DEL
+&trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &kp LG(Q)                            &trans  &trans  &trans  &kp INS    &kp LEFT        &kp DOWN   &kp UP     &kp RIGHT    &trans
+&trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans                           &trans          &kp LC(Z)  &kp LC(X)       &kp LC(C)  &kp LC(V)  &kp LC(Y)    &trans
                                 &trans      &trans      &trans                                                       &trans     &trans          &trans
             >;
 
